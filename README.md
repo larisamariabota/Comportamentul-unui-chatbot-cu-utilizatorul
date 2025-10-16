@@ -31,4 +31,4 @@ Acest proiect simulează o conversație între un utilizator și un AI, ținând
 python nume_script.py
 ---
 ##Exemple de rulare
-![](image/model simulare.png)
+![](image/models_imulare.png)
