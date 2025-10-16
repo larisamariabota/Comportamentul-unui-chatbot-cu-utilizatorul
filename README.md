@@ -29,6 +29,6 @@ Acest proiect simulează o conversație între un utilizator și un AI, ținând
 
 ```bash
 python nume_script.py
-
+---
 ##Exemple de rulare
-![](model simulare.png)
+![](image/model simulare.png)
