@@ -1,34 +1,64 @@
-# Simularea unei Conversații AI
+# AI Conversation Simulation Model
 
-Acest proiect simulează o conversație între un utilizator și un AI, ținând cont de probabilitatea ca AI-ul să înțeleagă întrebările, timpul de răspuns și nivelul de satisfacție al utilizatorului.
+## Overview
+
+This project is a Python-based simulation of an AI conversation system.  
+It models how an AI might respond to user questions using probabilistic behavior and statistical distributions.
+
+The simulation includes:
+- Probability of understanding user input
+- Response time modeling (exponential distribution)
+- User satisfaction modeling (normal distribution)
+- Multiple user questions in one session
+
+### Demo 
+![](foto/model%20simulare.png)
 
 ---
 
-## Funcționalități
-
-- Simulează înțelegerea întrebărilor de către AI folosind probabilitatea introdusă.
-- Calculează timpul de răspuns pentru fiecare întrebare pe baza unei distribuții exponențiale.
-- Determină dacă răspunsul este corect sau dacă AI-ul cere clarificări.
-- Simulează nivelul de satisfacție al utilizatorului pe o scară de la 0 la 10 folosind distribuția normală.
-- Permite introducerea unui număr nelimitat de întrebări.
 
 ---
 
-## Cerințe
+## How It Works
+
+The AI does not use real machine learning. Instead, it simulates behavior using probability:
+
+- **Understanding** → Bernoulli trial (random success/failure)
+- **Response time** → Exponential distribution
+- **Satisfaction** → Normal distribution
+
+---
+
+## Mathematical Models
+
+### Uniform Distribution
+Used as a base random generator.
+
+### Exponential Distribution
+Models response time:
+- fast responses are common
+- slow responses are rare
+
+### Normal Distribution
+Models user satisfaction:
+- most results are near average
+- extremes are rare
+
+---
+
+## Requirements
 
 - Python 3.x
-- Module standard: `random`, `math` (nu necesită instalări suplimentare)
+- No external libraries required
+
+Built-in modules used:
+- `random`
+- `math`
 
 ---
 
-## Cum se rulează
-
-1. Clonează sau descarcă proiectul.
-2. Deschide terminalul și navighează în directorul proiectului.
-3. Rulează scriptul:
+## How to Run
 
 ```bash
-python nume_script.py
----
-##Exemple de rulare
-![Exemplu de rulare](./models_imulare.png)
+python main.py
+
